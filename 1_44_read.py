@@ -28,3 +28,17 @@ for d in data:
 	sum_len += len(d)
 
 print('留言的平均長度為', sum_len/len(data))
+
+"""
+1. 篩選概念
+2. 印篩選完的東西看看
+3. 建立版本上傳
+4. 另外一個篩選範例
+
+"""
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆留言長度小於100')
+print(new[0])
